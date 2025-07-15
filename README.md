@@ -77,6 +77,12 @@ This website showcases a professional secretary service with:
 - [Font Awesome](https://fontawesome.com/) - Icons
 - [Google Fonts](https://fonts.google.com/) - Typography (Poppins & Roboto)
 
+## 🌐 Live Site
+
+**GitHub Pages URL:** https://sutefu23.github.io/hisho/
+
+The site is automatically deployed via GitHub Actions when changes are pushed to the main branch.
+
 ## 📄 License
 
 This project is for educational purposes, recreating the original HTML design in Astro.js format.
