@@ -3,8 +3,8 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://secretary-service.com',
-  base: '/',
+  site: 'https://sutefu23.github.io',
+  base: '/hisho/',
   output: 'static',
   compressHTML: true,
   build: {
