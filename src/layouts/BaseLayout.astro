@@ -1,0 +1,99 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "プロフェッショナル秘書代行サービス - 確実性と信頼性のあるサポート" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8e98006f77.js" crossorigin="anonymous" is:inline></script>
+  
+  <!-- Global CSS with Tailwind -->
+  <link rel="stylesheet" href="/src/styles/global.css">
+  
+  <style>
+    :root {
+      --accent-color: #FF8800;
+      --accent2-color: #FFCC00;
+      --accent3-color: #77DD77;
+      --accent4-color: #0077CC;
+      --primary-color: #0077CC;
+      --dark-text-color: #333333;
+      --gray-text-color: #555555;
+      --light-text-color: #FFFFFF;
+      --dark-background-color: #202830;
+      --light-background-color: #F0F8FF;
+      --medium-background-color: #E0F0FF;
+      --font-family-body: 'Roboto', sans-serif;
+      --font-family-heading: 'Poppins', sans-serif;
+      --primary-button-text-color: #FFFFFF;
+      --primary-button-hover-bg-color: #0066AA;
+      --secondary-button-bg-color: #F8F9FA;
+      --secondary-button-text-color: #333333;
+      --secondary-button-hover-bg-color: #E9ECEF;
+      --light-border-color: #E5E7EB;
+    }
+    
+    body {
+      font-family: var(--font-family-body);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-family-heading);
+    }
+    
+    /* Mobile menu animation */
+    .mobile-menu {
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-menu.hidden {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    
+    .mobile-menu.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="h-full bg-white">
+  <div class="frame-root">
+    <div class="frame-content">
+      <div class="[font-family:var(--font-family-body)]">
+        <slot />
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.querySelector('[data-landingsite-mobile-menu-toggle]');
+      const mobileMenu = document.querySelector('[data-landingsite-mobile-menu]');
+      
+      if (toggleButton && mobileMenu) {
+        toggleButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

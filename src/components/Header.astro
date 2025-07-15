@@ -1,0 +1,102 @@
+---
+// Header component for the secretary service website
+---
+
+<header id="global-header" class="code-section bg-white shadow-lg relative z-50">
+  <div class="container mx-auto px-4 lg:px-8">
+    <div class="flex items-center justify-between h-32">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="block">
+          <img 
+            src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/213c73bf-1218-41e8-19a6-e36d88546100/public" 
+            alt="秘書代行サービス" 
+            class="h-28 py-2 w-auto" 
+            data-logo="true"
+          >
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a 
+          href="/サービス" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200"
+        >
+          サービス
+        </a>
+        <a 
+          href="/料金プラン" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200"
+        >
+          料金プラン
+        </a>
+        <a 
+          href="/実績" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200"
+        >
+          実績
+        </a>
+        <a 
+          href="/お問い合わせ" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200"
+        >
+          お問い合わせ
+        </a>
+        <a 
+          href="/お問い合わせ" 
+          class="bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-6 py-3 rounded-md hover:bg-[var(--primary-button-hover-bg-color)] transition-colors duration-200 font-medium"
+        >
+          お問い合わせはこちら
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button 
+        class="lg:hidden text-[var(--dark-text-color)] hover:text-[var(--primary-color)] transition-colors duration-200" 
+        data-landingsite-mobile-menu-toggle
+      >
+        <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div 
+      class="lg:hidden hidden bg-white border-t border-[var(--light-border-color)] py-4 mobile-menu" 
+      data-landingsite-mobile-menu
+    >
+      <nav class="flex flex-col space-y-4">
+        <a 
+          href="/サービス" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200 py-2"
+        >
+          サービス
+        </a>
+        <a 
+          href="/料金プラン" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200 py-2"
+        >
+          料金プラン
+        </a>
+        <a 
+          href="/実績" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200 py-2"
+        >
+          実績
+        </a>
+        <a 
+          href="/お問い合わせ" 
+          class="text-[var(--dark-text-color)] hover:text-[var(--primary-color)] font-medium transition-colors duration-200 py-2"
+        >
+          お問い合わせ
+        </a>
+        <a 
+          href="/お問い合わせ" 
+          class="bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-6 py-3 rounded-md hover:bg-[var(--primary-button-hover-bg-color)] transition-colors duration-200 font-medium text-center mt-4"
+        >
+          お問い合わせはこちら
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>

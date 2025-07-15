@@ -1,0 +1,72 @@
+---
+// Hero section component for the secretary service website
+---
+
+<section id="hero" class="code-section relative bg-[var(--light-background-color)] overflow-hidden">
+  <!-- Background decorations -->
+  <div class="absolute top-20 left-10 w-64 h-64 bg-[var(--accent-color)] rounded-full opacity-20 blur-3xl"></div>
+  <div class="absolute bottom-20 right-20 w-80 h-80 bg-[var(--primary-color)] rounded-full opacity-20 blur-3xl"></div>
+
+  <!-- Content Container -->
+  <div class="relative z-10 container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Column - Content -->
+        <div class="text-center lg:text-left">
+          <h1 class="text-4xl lg:text-6xl font-bold text-[var(--dark-text-color)] mb-6 leading-tight">
+            プロフェッショナル<br>
+            <span class="text-[var(--primary-color)]">秘書代行サービス</span>
+          </h1>
+          
+          <p class="text-xl lg:text-2xl text-[var(--gray-text-color)] mb-4 leading-relaxed">
+            高品質な秘書代行サービスを<br>
+            <span class="text-[var(--primary-color)] font-semibold">5,000円／時間</span>でご提供
+          </p>
+          
+          <p class="text-base text-[var(--gray-text-color)] mb-8">
+            TOEIC 900点・簿記二級・一部上場企業経理経験・宅建資格保有の<br>
+            プロフェッショナルがお客様のビジネスを確実にサポートします。
+          </p>
+          
+          
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a 
+              href="/お問い合わせ" 
+              class="bg-[var(--primary-color)] text-[var(--primary-button-text-color)] px-8 py-4 rounded-lg hover:bg-[var(--primary-button-hover-bg-color)] transition-colors duration-200 font-medium text-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              <i class="fas fa-comments mr-2"></i>
+              無料相談を申し込む
+            </a>
+            <a 
+              href="/サービス" 
+              class="bg-[var(--secondary-button-bg-color)] text-[var(--secondary-button-text-color)] px-8 py-4 rounded-lg hover:bg-[var(--secondary-button-hover-bg-color)] transition-colors duration-200 font-medium text-center border-2 border-[var(--light-border-color)] hover:border-[var(--primary-color)]"
+            >
+              <i class="fas fa-info-circle mr-2"></i>
+              サービス詳細を見る
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right Column - Image -->
+        <div class="relative">
+          <div class="relative z-10">
+            <img 
+              src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/686e9da1-4025-4949-b73c-68d75f21e300/public" 
+              alt="Professional secretary service representative" 
+              class="w-full h-96 object-cover rounded-2xl shadow-2xl"
+            >
+            <!-- Image tags -->
+            <div class="absolute top-4 left-4 bg-[var(--accent-color)] text-white px-4 py-2 rounded-md font-bold">
+              申込開始
+            </div>
+            <div class="absolute bottom-4 right-4 bg-[var(--accent3-color)] text-white px-4 py-2 rounded-md font-bold">
+              即戦力
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

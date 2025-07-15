@@ -1,0 +1,77 @@
+---
+// Call-to-Action section component
+---
+
+<section id="smtxe2e" class="code-section bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent4-color)] py-16 lg:py-20 relative overflow-hidden">
+  <!-- Animated background circles -->
+  <div class="absolute top-10 right-10 w-32 h-32 bg-white opacity-10 rounded-full animate-pulse"></div>
+  <div class="absolute bottom-20 left-20 w-20 h-20 bg-white opacity-10 rounded-full animate-pulse animation-delay-2s"></div>
+  <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-white opacity-10 rounded-full animate-pulse animation-delay-4s"></div>
+
+  <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- Main heading -->
+      <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+        今すぐ<span class="text-[var(--accent2-color)]">プロフェッショナル</span>な<br>
+        サポートを始めませんか？
+      </h2>
+      
+      <p class="text-xl lg:text-2xl text-white opacity-90 mb-12 leading-relaxed">
+        無料相談で、あなたのビジネスニーズに最適な<br>
+        ソリューションをご提案いたします
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+        <a 
+          href="/お問い合わせ" 
+          class="bg-white text-[var(--primary-color)] px-10 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+        >
+          <i class="fas fa-envelope mr-2"></i>
+          今すぐ無料相談する
+        </a>
+        
+        <a 
+          href="/料金プラン" 
+          class="bg-transparent border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-[var(--primary-color)] transition-all duration-200"
+        >
+          <i class="fas fa-tag mr-2"></i>
+          料金プランを見る
+        </a>
+      </div>
+
+      <!-- Trust indicators -->
+      <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto mb-12">
+        <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 hover:bg-opacity-30 transition-all duration-300">
+          <i class="fas fa-shield-alt text-[var(--accent2-color)] text-4xl mb-3"></i>
+          <h3 class="font-semibold text-xl mb-2 text-white">安心保証</h3>
+          <p class="text-white opacity-90">満足いくまでサポート</p>
+        </div>
+        
+        <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-6 hover:bg-opacity-30 transition-all duration-300">
+          <i class="fas fa-gift text-[var(--accent2-color)] text-4xl mb-3"></i>
+          <h3 class="font-semibold text-xl mb-2 text-white">初回20時間無料</h3>
+          <p class="text-white opacity-90">相談・見積もり無料</p>
+        </div>
+      </div>
+
+      <!-- Contact info -->
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-white mb-4">お気軽にお問い合わせください</h3>
+        <p class="text-white opacity-90 mb-6">
+          平日 9:00-18:00 / 土日祝日も対応可能（事前予約制）
+        </p>
+        <div class="flex justify-center gap-4 text-white">
+          <div class="flex items-center">
+            <i class="fas fa-comment-dots text-[var(--accent2-color)] mr-2"></i>
+            <span>Zoomでのご相談も承ります。</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-envelope text-[var(--accent2-color)] mr-2"></i>
+            <span>メールでのお問い合わせは24時間受付</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
